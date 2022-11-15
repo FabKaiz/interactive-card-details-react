@@ -1,4 +1,14 @@
+// Colors variables
 $white: hsl(0, 0%, 100%);
+$light-gray-violet: hsl(270, 3%, 87%);
+$dark-gray-violet: hsl(279, 6%, 55%);
+$very-dark-violet: hsl(278, 68%, 11%);
+
+// input errors
+$red: hsl(0, 100%, 66%);
+
+// active input border
+$linear-gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
 
 .cards__container {
   padding: 1rem;
@@ -11,11 +21,9 @@ $white: hsl(0, 0%, 100%);
   background-repeat: no-repeat;
   height: 100%;
   width: 80%;
-  border-radius: 0.50rem;
+  border-radius: 0.5rem;
   padding: 1.5rem 1.5rem 0.25rem;
-
   color: $white;
-
 
   .card__bottom {
     display: flex;
@@ -25,4 +33,86 @@ $white: hsl(0, 0%, 100%);
 
 .card__back {
   background-image: url('../../assets/bg-card-back.png');
+}
+
+.form__content {
+  padding: 1rem;
+
+  input {
+    width: 100%;
+    height: 2.5rem;
+    border: 1px solid $light-gray-violet;
+    border-radius: 0.35rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    margin-top: 0.25rem;
+    outline: 2px solid hsla(249, 99%, 64%, 0);
+    transition: outline 0.4s ease-in-out;
+
+    &:focus {
+      outline: 2px solid hsl(249, 99%, 64%);
+    }
+
+    // hide arrows from number input
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+
+  /* Firefox hide arrows from number input */
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 1.2px;
+
+    &.error {
+      color: $red;
+    }
+  }
+
+  .form__content-bottom {
+    display: flex;
+    justify-content: space-between;
+
+    .form__date-label {
+      width: 45%;
+    }
+
+    .date__input-container {
+      display: flex;
+      input {
+        margin-right: 0.75rem;
+      }
+    }
+
+    .cvc__input {
+      display: flex;
+      width: 100%;
+    }
+  }
+
+  button {
+    width: 100%;
+    height: 2.5rem;
+    border: none;
+    border-radius: 0.35rem;
+    background: $very-dark-violet;
+    color: $white;
+    font-size: 1rem;
+    font-family: 'Space Grotesk', sans-serif;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
 }
