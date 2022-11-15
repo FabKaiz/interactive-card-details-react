@@ -23,15 +23,17 @@ const Form = () => {
           </label>
 
           <div className="form__content-bottom">
-            <label>
+            <label className="form__date-label">
               Exp. Date (MM/YY)
-              <input type="number" name="month" placeholder="MM" />
-              <input type="number" name="year" placeholder="YY" />
+              <div className="date__input-container">
+                <input type="number" name="month" placeholder="MM" />
+                <input type="number" name="year" placeholder="YY" />
+              </div>
             </label>
 
             <label>
               CVC
-              <input type="number" placeholder="e.g. 123" />
+              <input className='cvc__input' type="number" placeholder="e.g. 123" />
             </label>
           </div>
 
