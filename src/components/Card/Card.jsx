@@ -2,19 +2,19 @@ import React from 'react'
 import './Card.scss'
 import cardLogo from '../../assets/card-logo.svg'
 
-const Card = () => {
+const Card = ({cardName, cardNumber, cardMonth, cardYear, cardCvc}) => {
   return (
     <div className="cards__container">
       <div className="card__front">
         <img src={cardLogo} alt="card logo" />
-        <p>0000 0000 0000 0000</p>
+        <p>{cardNumber || "0000 0000 0000 0000"}</p>
         <div className="card__bottom">
-          <p>Jane Appleseed</p>
-          <p>00/00</p>
+          <p>{cardName || 'Jane Appleseed'}</p>
+          <p>{cardMonth || 'MM'}/{cardYear || 'YY'}</p>
         </div>
       </div>
       <div className="card__back">
-        <p>000</p>
+        <p>{cardCvc|| '000'}</p>
       </div>
     </div>
   )
