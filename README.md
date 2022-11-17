@@ -1,6 +1,19 @@
-# Getting Started with Create React App
+# Interactive card payement details
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### [Result here](https://framer-motion-react-fabkaiz.netlify.app/)
+
+### The challenge
+
+Frontend Mentor challenge: create a card payment details page with some validations and interactive card.
+
+[See challenge](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw)
+
+#### What i used :
+
+- [React](https://reactjs.org/)
+- [Scss](https://sass-lang.com/)
+
+![website screenshot](./screenshot.jpg)
 
 ## Available Scripts
 
