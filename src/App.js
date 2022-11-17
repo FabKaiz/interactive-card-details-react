@@ -1,6 +1,6 @@
-import './App.scss';
-import Disclaimer from './components/Disclaimer/Disclaimer';
-import Form from './components/Form/Form';
+import './App.scss'
+import Disclaimer from './components/Disclaimer/Disclaimer'
+import Form from './components/Form/Form'
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <Form />
       <Disclaimer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
