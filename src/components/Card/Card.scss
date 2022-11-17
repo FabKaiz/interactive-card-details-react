@@ -97,3 +97,24 @@ $white: hsl(0, 0%, 100%);
     }
   }
 }
+
+@media screen and (min-width: 2000px) {
+  .card__front,
+  .card__back {
+    height: 280px;
+    width: 460px;
+  }
+
+  .card__front {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  .card__back {
+    margin-top: 9rem;
+
+    p {
+      font-size: 1.25rem;
+    }
+  }
+}
