@@ -1,12 +1,12 @@
 # Interactive card payement details
 
-### [Result here](https://framer-motion-react-fabkaiz.netlify.app/)
+### [Result here](https://interactive-card-details-fabkaiz.netlify.app/)
 
-### The challenge
-
-Frontend Mentor challenge: create a card payment details page with some validations and interactive card.
-
-[See challenge](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw)
+### The challenge:
+```
+Create a card payment details page with some validations and interactive card.
+```
+#### [More info about the challenge](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw)
 
 #### What i used :
 
